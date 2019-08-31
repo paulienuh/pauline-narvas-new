@@ -26,12 +26,13 @@
         font-weight: normal;
         line-height: 1.174;
         text-align: center;
+        padding-bottom: 10px;
       }
       p {
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         font-size: 1em;
-        line-height: 3em;
+        line-height: 1.5em;
         color: #fff;
         text-align: center;
       }
@@ -71,6 +72,24 @@
       .intro > p {
         color: black;
       }
+      .tech {
+        list-style: none;
+        text-align: center;
+        padding-left: 0px;
+        padding-top: 50px;
+      }
+      .tech > li {       
+        text-align: center; 
+        display: inline-block;
+        padding: 10px;
+        border-radius: 5%;
+        margin: 5px;
+        background-color: #bc99bd;
+      }
+      .tech > li:hover {
+        background-color: #8b6d8c;
+      }
+
     </style>
   </head>
   <body>
@@ -123,7 +142,23 @@
           </amp-story-grid-layer>
           
           <amp-story-grid-layer template="thirds">
-            <h1 grid-area="middle-third">I first started to code when I was 8 years old.</h1>
+            <div  grid-area="middle-third" >
+                <h1 animate-in="fade-in" animate-in-delay="0.3s"  >I began coding at 8 years old, just for fun.</h1>
+                <p animate-in="fade-in" animate-in-delay="0.5s"  > Today, I continue to bring my ideas to life by playing around with pixels on the internet. I'm familiar with:</p>
+                <ul class="tech" >
+                    <li animate-in="drop" animate-in-delay="1.0s">HTML</li>
+                    <li animate-in="drop" animate-in-delay="1.0s">CSS</li>
+                    <li animate-in="drop" animate-in-delay="1.0s">SASS/SCSS</li>
+                    <li animate-in="drop" animate-in-delay="1.3s">Javascript</li>
+                    <li animate-in="drop" animate-in-delay="1.3s">jQuery</li>
+                    <li animate-in="drop" animate-in-delay="1.3s">Bootstrap</li>
+                    <li animate-in="drop" animate-in-delay="1.5s">Next.js</li>
+                    <li animate-in="drop" animate-in-delay="1.5s">React</li>
+                    <li animate-in="drop" animate-in-delay="1.5s">PHP</li>
+                    <li animate-in="drop" animate-in-delay="1.5s">Wordpress</li>
+                  </ul>
+            </div>
+             
           </amp-story-grid-layer>
         </amp-story-page>
 
