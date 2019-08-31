@@ -2,7 +2,7 @@
 <html ⚡>
   <head>
     <meta charset="utf-8">
-    <title>Pauline Narvas</title>
+    <title>Pauline P. Narvas</title>
     <link rel="canonical" href="index.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -11,7 +11,8 @@
     <script async custom-element="amp-story"
         src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
     <style amp-custom>
-      amp-story {
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Roboto:300&display=swap');
+        amp-story {
         font-family: 'Oswald',sans-serif;
         color: #fff;
       }
@@ -19,16 +20,18 @@
         background-color: #000;
       }
       h1 {
+        font-family: 'Open Sans', sans-serif;
         font-weight: bold;
-        font-size: 2.875em;
+        font-size: 2em;
         font-weight: normal;
         line-height: 1.174;
         text-align: center;
       }
       p {
-        font-weight: normal;
-        font-size: 1.3em;
-        line-height: 1.5em;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 1em;
+        line-height: 3em;
         color: #fff;
         text-align: center;
       }
@@ -62,6 +65,12 @@
       .intro {
         padding-top: 100px;
       }
+      .intro > h1 {
+        color: black;
+      }
+      .intro > p {
+        color: black;
+      }
     </style>
   </head>
   <body>
@@ -76,7 +85,7 @@
     <!-- First page -->
     <amp-story-page id="cover">
       <amp-story-grid-layer template="fill" >
-        <amp-img src="background.png"
+        <amp-img src="white_bg.png"
           width="720" height="1280"
           layout="responsive">
         </amp-img>
@@ -84,7 +93,7 @@
 
       <amp-story-grid-layer template="thirds">
         <amp-img grid-area="upper-third" animate-in="drop"src="https://paulinenarvas.com/Images/Main/Photo1.png"
-        width="250" height="250" class="Profile"></amp-img>
+        width="270" height="250" class="Profile"></amp-img>
         <div class="intro" grid-area="middle-third" animate-in="drop">
             <h1>Hi, I'm Pauline.</h1>
             <p>People also search for: <em>Powerhouse</em></p>
@@ -96,7 +105,7 @@
      <!-- second page -->
       <amp-story-page id="page1">
         <amp-story-grid-layer template="fill">
-          <amp-img src="assets/cover.jpg"
+          <amp-img src="background.png"
           width="720" height="1280"
           layout="responsive">
           </amp-img>
