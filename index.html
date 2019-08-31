@@ -23,7 +23,6 @@
         font-family: 'Open Sans', sans-serif;
         font-weight: bold;
         font-size: 2em;
-        font-weight: normal;
         line-height: 1.174;
         text-align: center;
         padding-bottom: 10px;
@@ -72,6 +71,16 @@
       .intro > p {
         color: black;
       }
+      .page3 > h1 {
+        color: white;
+        text-align: left;
+        padding-left: 20px;
+      }
+      .page3 > p {
+        color: white;
+        text-align: left;
+        padding-left: 20px;
+      }
       .tech {
         list-style: none;
         text-align: center;
@@ -89,7 +98,14 @@
       .tech > li:hover {
         background-color: #8b6d8c;
       }
-
+      a {
+        color: black;
+        border-bottom: 1px dotted #a37da4;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #a37da4;
+      }
     </style>
   </head>
   <body>
@@ -131,7 +147,6 @@
       </amp-story-grid-layer>
       </amp-story-page>
 
-
      <!-- second page -->
       <amp-story-page id="page1">
         <amp-story-grid-layer template="fill">
@@ -142,7 +157,7 @@
           </amp-story-grid-layer>
           
           <amp-story-grid-layer template="thirds">
-            <div  grid-area="middle-third" >
+            <div  grid-area="upper-third" >
                 <h1 animate-in="fade-in" animate-in-delay="0.3s"  >I began coding at 8 years old, just for fun.</h1>
                 <p animate-in="fade-in" animate-in-delay="0.5s"  > Today, I continue to bring my ideas to life by playing around with pixels on the internet. I'm familiar with:</p>
                 <ul class="tech" >
@@ -157,10 +172,40 @@
                     <li animate-in="drop" animate-in-delay="1.5s">PHP</li>
                     <li animate-in="drop" animate-in-delay="1.5s">Wordpress</li>
                   </ul>
-            </div>
-             
+            </div>    
           </amp-story-grid-layer>
         </amp-story-page>
+
+         <!-- Third page -->
+    <amp-story-page id="page2">
+        <amp-story-grid-layer template="fill" >
+          <amp-img src="graduate.jpg"
+            width="720" height="1280"
+            layout="responsive">
+          </amp-img>
+        </amp-story-grid-layer>
+  
+        <amp-story-grid-layer template="thirds">
+          <div class="page3" 
+          grid-area="upper-third" 
+          animate-in="fly-in-left"
+          animate-in-delay="0.5s"
+         >
+              <h1>I graduated in 2018</h1>
+              <p>with a degree in <em>Biomedical Sciences with a Year in Industry </em>
+                from the University of Sheffield.</p> 
+              </div>
+
+              <div class="industry" 
+              grid-area="lower-third" 
+              animate-in="fly-in-right"
+              animate-in-delay="1.0s"
+             >
+                  <p style="text-align: right; padding-top: 130px;">I spent my Year in Industry as a Communications and External Engagement Assistant Intern at the university.</div>
+        </amp-story-grid-layer>
+        </amp-story-page>
+
+       
 
     </amp-story>
   </body>
